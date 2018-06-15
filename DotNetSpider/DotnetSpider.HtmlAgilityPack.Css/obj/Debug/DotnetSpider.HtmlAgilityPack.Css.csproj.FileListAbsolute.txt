@@ -1,0 +1,8 @@
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\bin\Debug\DotnetSpider.HtmlAgilityPack.Css.dll
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\bin\Debug\DotnetSpider.HtmlAgilityPack.Css.pdb
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\bin\Debug\HtmlAgilityPack.dll
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\bin\Debug\HtmlAgilityPack.pdb
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\bin\Debug\HtmlAgilityPack.xml
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\obj\Debug\DotnetSpider.HtmlAgilityPack.Css.csprojResolveAssemblyReference.cache
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\obj\Debug\DotnetSpider.HtmlAgilityPack.Css.dll
+E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.HtmlAgilityPack.Css\obj\Debug\DotnetSpider.HtmlAgilityPack.Css.pdb

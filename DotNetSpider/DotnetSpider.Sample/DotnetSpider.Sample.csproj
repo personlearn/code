@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A59AE35-07F0-41D1-BEA2-E16BBFBBEB93}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotnetSpider.Sample</RootNamespace>
+    <AssemblyName>DotnetSpider.Sample</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tesseract, Version=3.0.2.0, Culture=neutral, PublicKeyToken=ebeb3d86bef60cbe, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tesseract.3.0.2.0\lib\net451\Tesseract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CtripCitySpider.cs" />
+    <Compile Include="CustomSpider1.cs" />
+    <Compile Include="DDengEntitySpider.cs" />
+    <Compile Include="DebugAfterDownloaderHandler.cs" />
+    <Compile Include="DefaultMySqlPipelineSpider.cs" />
+    <Compile Include="docs\AutoIncrementTargetUrlsExtractor.cs" />
+    <Compile Include="JdCategorySpider.cs" />
+    <Compile Include="JdShopDetailSpider.cs" />
+    <Compile Include="JdShopDetailSpider2.cs" />
+    <Compile Include="JdSkuSampleSpider.cs" />
+    <Compile Include="JdSkuWebDriverSample.cs" />
+    <Compile Include="JdSpider.cs" />
+    <Compile Include="MultiSupplementSpider.cs" />
+    <Compile Include="OcrDemo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexTestEntitySpider.cs" />
+    <Compile Include="ShanxizhaoshengSpider.cs" />
+    <Compile Include="Situoli.cs" />
+    <Compile Include="TaobaoKeywordWatcher.cs" />
+    <Compile Include="寻医问药Spider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetSpider.Core\DotnetSpider.Core.csproj">
+      <Project>{538b7aa8-b8e0-4d76-9ae8-b19dd98b0e76}</Project>
+      <Name>DotnetSpider.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotnetSpider.Extension\DotnetSpider.Extension.csproj">
+      <Project>{9d6868bb-0f70-4e1e-9cd3-ea81b45b045f}</Project>
+      <Name>DotnetSpider.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotnetSpider.HtmlAgilityPack.Css\DotnetSpider.HtmlAgilityPack.Css.csproj">
+      <Project>{e02a5bf6-3224-401c-b4aa-a74b3de94ae6}</Project>
+      <Name>DotnetSpider.HtmlAgilityPack.Css</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\liblept172.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libtesseract304.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\liblept172.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libtesseract304.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

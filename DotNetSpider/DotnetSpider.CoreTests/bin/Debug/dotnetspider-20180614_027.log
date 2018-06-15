@@ -1,0 +1,76 @@
+2018-06-14 11:40:46.978 +08:00 [Information] Build internal component...
+2018-06-14 11:40:46.981 +08:00 [Information] Add start urls to scheduler, count 10000.
+2018-06-14 11:40:47.113 +08:00 [Verbose] Left 10000 Success 0 Error 0 Total 10000 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:40:47.430 +08:00 [Warning] Skip http://www.baidu.com/0 because extract 0 result.
+2018-06-14 11:40:48.519 +08:00 [Warning] Skip http://www.baidu.com/1 because extract 0 result.
+2018-06-14 11:40:49.605 +08:00 [Warning] Skip http://www.baidu.com/2 because extract 0 result.
+2018-06-14 11:40:50.693 +08:00 [Warning] Skip http://www.baidu.com/3 because extract 0 result.
+2018-06-14 11:40:51.786 +08:00 [Warning] Skip http://www.baidu.com/4 because extract 0 result.
+2018-06-14 11:40:51.979 +08:00 [Information] cea57f6092fd40a492a8df5593dab454
+2018-06-14 11:40:51.980 +08:00 [Warning] Continue...
+2018-06-14 11:40:52.875 +08:00 [Warning] Skip http://www.baidu.com/5 because extract 0 result.
+2018-06-14 11:40:53.966 +08:00 [Warning] Skip http://www.baidu.com/6 because extract 0 result.
+2018-06-14 11:40:55.062 +08:00 [Warning] Skip http://www.baidu.com/7 because extract 0 result.
+2018-06-14 11:40:56.152 +08:00 [Warning] Skip http://www.baidu.com/8 because extract 0 result.
+2018-06-14 11:40:57.241 +08:00 [Warning] Skip http://www.baidu.com/9 because extract 0 result.
+2018-06-14 11:40:58.241 +08:00 [Verbose] Left 9990 Success 10 Error 0 Total 10000 Dowload 90 Extract 0 Pipeline 0
+2018-06-14 11:40:58.336 +08:00 [Warning] Skip http://www.baidu.com/10 because extract 0 result.
+2018-06-14 11:40:59.431 +08:00 [Warning] Skip http://www.baidu.com/11 because extract 0 result.
+2018-06-14 11:41:00.519 +08:00 [Warning] Skip http://www.baidu.com/12 because extract 0 result.
+2018-06-14 11:41:01.608 +08:00 [Warning] Skip http://www.baidu.com/13 because extract 0 result.
+2018-06-14 11:41:02.700 +08:00 [Warning] Skip http://www.baidu.com/14 because extract 0 result.
+2018-06-14 11:41:03.789 +08:00 [Warning] Skip http://www.baidu.com/15 because extract 0 result.
+2018-06-14 11:41:04.876 +08:00 [Warning] Skip http://www.baidu.com/16 because extract 0 result.
+2018-06-14 11:41:05.964 +08:00 [Warning] Skip http://www.baidu.com/17 because extract 0 result.
+2018-06-14 11:41:07.052 +08:00 [Warning] Skip http://www.baidu.com/18 because extract 0 result.
+2018-06-14 11:41:08.139 +08:00 [Warning] Skip http://www.baidu.com/19 because extract 0 result.
+2018-06-14 11:41:09.139 +08:00 [Verbose] Left 9980 Success 20 Error 0 Total 10000 Dowload 87 Extract 0 Pipeline 0
+2018-06-14 11:41:09.227 +08:00 [Warning] Skip http://www.baidu.com/20 because extract 0 result.
+2018-06-14 11:41:10.318 +08:00 [Warning] Skip http://www.baidu.com/21 because extract 0 result.
+2018-06-14 11:41:11.405 +08:00 [Warning] Skip http://www.baidu.com/22 because extract 0 result.
+2018-06-14 11:41:12.494 +08:00 [Warning] Skip http://www.baidu.com/23 because extract 0 result.
+2018-06-14 11:41:13.582 +08:00 [Warning] Skip http://www.baidu.com/24 because extract 0 result.
+2018-06-14 11:41:14.671 +08:00 [Warning] Skip http://www.baidu.com/25 because extract 0 result.
+2018-06-14 11:41:15.779 +08:00 [Warning] Skip http://www.baidu.com/26 because extract 0 result.
+2018-06-14 11:41:17.196 +08:00 [Warning] Skip http://www.baidu.com/27 because extract 0 result.
+2018-06-14 11:41:18.283 +08:00 [Warning] Skip http://www.baidu.com/28 because extract 0 result.
+2018-06-14 11:41:19.371 +08:00 [Warning] Skip http://www.baidu.com/29 because extract 0 result.
+2018-06-14 11:41:20.371 +08:00 [Verbose] Left 9970 Success 30 Error 0 Total 10000 Dowload 130 Extract 0 Pipeline 0
+2018-06-14 11:41:20.459 +08:00 [Warning] Skip http://www.baidu.com/30 because extract 0 result.
+2018-06-14 11:41:21.547 +08:00 [Warning] Skip http://www.baidu.com/31 because extract 0 result.
+2018-06-14 11:41:22.636 +08:00 [Warning] Skip http://www.baidu.com/32 because extract 0 result.
+2018-06-14 11:41:23.724 +08:00 [Warning] Skip http://www.baidu.com/33 because extract 0 result.
+2018-06-14 11:41:24.812 +08:00 [Warning] Skip http://www.baidu.com/34 because extract 0 result.
+2018-06-14 11:41:25.901 +08:00 [Warning] Skip http://www.baidu.com/35 because extract 0 result.
+2018-06-14 11:41:26.989 +08:00 [Warning] Skip http://www.baidu.com/36 because extract 0 result.
+2018-06-14 11:41:28.078 +08:00 [Warning] Skip http://www.baidu.com/37 because extract 0 result.
+2018-06-14 11:41:29.165 +08:00 [Warning] Skip http://www.baidu.com/38 because extract 0 result.
+2018-06-14 11:41:30.253 +08:00 [Warning] Skip http://www.baidu.com/39 because extract 0 result.
+2018-06-14 11:41:31.253 +08:00 [Verbose] Left 9960 Success 40 Error 0 Total 10000 Dowload 87 Extract 0 Pipeline 0
+2018-06-14 11:41:31.340 +08:00 [Warning] Skip http://www.baidu.com/40 because extract 0 result.
+2018-06-14 11:41:32.431 +08:00 [Warning] Skip http://www.baidu.com/41 because extract 0 result.
+2018-06-14 11:41:33.520 +08:00 [Warning] Skip http://www.baidu.com/42 because extract 0 result.
+2018-06-14 11:41:34.610 +08:00 [Warning] Skip http://www.baidu.com/43 because extract 0 result.
+2018-06-14 11:41:35.696 +08:00 [Warning] Skip http://www.baidu.com/44 because extract 0 result.
+2018-06-14 11:41:36.792 +08:00 [Warning] Skip http://www.baidu.com/45 because extract 0 result.
+2018-06-14 11:41:37.881 +08:00 [Warning] Skip http://www.baidu.com/46 because extract 0 result.
+2018-06-14 11:41:38.972 +08:00 [Warning] Skip http://www.baidu.com/47 because extract 0 result.
+2018-06-14 11:41:40.062 +08:00 [Warning] Skip http://www.baidu.com/48 because extract 0 result.
+2018-06-14 11:41:41.149 +08:00 [Warning] Skip http://www.baidu.com/49 because extract 0 result.
+2018-06-14 11:41:42.149 +08:00 [Verbose] Left 9950 Success 50 Error 0 Total 10000 Dowload 88 Extract 0 Pipeline 0
+2018-06-14 11:41:42.236 +08:00 [Warning] Skip http://www.baidu.com/50 because extract 0 result.
+2018-06-14 11:41:43.331 +08:00 [Warning] Skip http://www.baidu.com/51 because extract 0 result.
+2018-06-14 11:41:44.420 +08:00 [Warning] Skip http://www.baidu.com/52 because extract 0 result.
+2018-06-14 11:41:45.507 +08:00 [Warning] Skip http://www.baidu.com/53 because extract 0 result.
+2018-06-14 11:41:46.594 +08:00 [Warning] Skip http://www.baidu.com/54 because extract 0 result.
+2018-06-14 11:41:47.682 +08:00 [Warning] Skip http://www.baidu.com/55 because extract 0 result.
+2018-06-14 11:41:48.771 +08:00 [Warning] Skip http://www.baidu.com/56 because extract 0 result.
+2018-06-14 11:41:49.865 +08:00 [Warning] Skip http://www.baidu.com/57 because extract 0 result.
+2018-06-14 11:41:50.954 +08:00 [Warning] Skip http://www.baidu.com/58 because extract 0 result.
+2018-06-14 11:41:52.043 +08:00 [Warning] Skip http://www.baidu.com/59 because extract 0 result.
+2018-06-14 11:41:53.043 +08:00 [Verbose] Left 9940 Success 60 Error 0 Total 10000 Dowload 89 Extract 0 Pipeline 0
+2018-06-14 11:41:53.130 +08:00 [Warning] Skip http://www.baidu.com/60 because extract 0 result.
+2018-06-14 11:41:53.549 +08:00 [Error] Crawler http://www.baidu.com/60 failed: System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 System.Threading.Thread.Sleep(Int32 millisecondsTimeout)
+   在 DotnetSpider.Core.Spider.<Execute>b__147_1(Int32 i) 位置 E:\mycode\DotNetSpider\DotNetSpider\DotnetSpider.Core\Spider.cs:行号 779.

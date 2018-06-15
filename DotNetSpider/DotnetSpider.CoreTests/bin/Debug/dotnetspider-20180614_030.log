@@ -1,0 +1,7 @@
+2018-06-14 11:41:18.692 +08:00 [Information] Build internal component...
+2018-06-14 11:41:18.698 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-14 11:41:18.698 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:41:19.257 +08:00 [Warning] Skip http://taobao.com/ because extract 0 result.
+2018-06-14 11:41:20.257 +08:00 [Verbose] Left 0 Success 1 Error 0 Total 1 Dowload 279 Extract 0 Pipeline 0
+2018-06-14 11:41:35.280 +08:00 [Verbose] Left 0 Success 1 Error 0 Total 1 Dowload 279 Extract 0 Pipeline 0
+2018-06-14 11:41:35.280 +08:00 [Information] Crawl complete, cost: 16.5819484 seconds.

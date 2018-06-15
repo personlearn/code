@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetSpider.Core", "DotnetSpider.Core\DotnetSpider.Core.csproj", "{538B7AA8-B8E0-4D76-9AE8-B19DD98B0E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetSpider.Extension", "DotnetSpider.Extension\DotnetSpider.Extension.csproj", "{9D6868BB-0F70-4E1E-9CD3-EA81B45B045F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetSpider.CoreTests", "DotnetSpider.CoreTests\DotnetSpider.CoreTests.csproj", "{D83F0810-F9C0-4316-813B-7BD3D9E4CFA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetSpider.HtmlAgilityPack.Css", "DotnetSpider.HtmlAgilityPack.Css\DotnetSpider.HtmlAgilityPack.Css.csproj", "{E02A5BF6-3224-401C-B4AA-A74B3DE94AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetSpider.Sample", "DotnetSpider.Sample\DotnetSpider.Sample.csproj", "{2A59AE35-07F0-41D1-BEA2-E16BBFBBEB93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{538B7AA8-B8E0-4D76-9AE8-B19DD98B0E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538B7AA8-B8E0-4D76-9AE8-B19DD98B0E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538B7AA8-B8E0-4D76-9AE8-B19DD98B0E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538B7AA8-B8E0-4D76-9AE8-B19DD98B0E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6868BB-0F70-4E1E-9CD3-EA81B45B045F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6868BB-0F70-4E1E-9CD3-EA81B45B045F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6868BB-0F70-4E1E-9CD3-EA81B45B045F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6868BB-0F70-4E1E-9CD3-EA81B45B045F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D83F0810-F9C0-4316-813B-7BD3D9E4CFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83F0810-F9C0-4316-813B-7BD3D9E4CFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83F0810-F9C0-4316-813B-7BD3D9E4CFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83F0810-F9C0-4316-813B-7BD3D9E4CFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02A5BF6-3224-401C-B4AA-A74B3DE94AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02A5BF6-3224-401C-B4AA-A74B3DE94AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02A5BF6-3224-401C-B4AA-A74B3DE94AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02A5BF6-3224-401C-B4AA-A74B3DE94AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A59AE35-07F0-41D1-BEA2-E16BBFBBEB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A59AE35-07F0-41D1-BEA2-E16BBFBBEB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A59AE35-07F0-41D1-BEA2-E16BBFBBEB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A59AE35-07F0-41D1-BEA2-E16BBFBBEB93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

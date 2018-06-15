@@ -1,0 +1,15 @@
+2018-06-14 11:40:45.724 +08:00 [Information] Build internal component...
+2018-06-14 11:40:45.727 +08:00 [Information] Add start urls to scheduler, count 5.
+2018-06-14 11:40:45.729 +08:00 [Verbose] Left 5 Success 0 Error 0 Total 5 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:40:46.481 +08:00 [Information] Crawl: http://item.jd.com/1013286.html?_t=1 success, results: , effectedRow: .
+2018-06-14 11:40:46.482 +08:00 [Verbose] Left 4 Success 1 Error 0 Total 5 Dowload 370 Extract 1 Pipeline 2
+2018-06-14 11:40:46.592 +08:00 [Information] Crawl: http://item.jd.com/1013286.html?_t=2 success, results: , effectedRow: .
+2018-06-14 11:40:46.592 +08:00 [Verbose] Left 3 Success 2 Error 0 Total 5 Dowload 239 Extract 0 Pipeline 1
+2018-06-14 11:40:46.710 +08:00 [Information] Crawl: http://item.jd.com/1013286.html?_t=3 success, results: , effectedRow: .
+2018-06-14 11:40:46.710 +08:00 [Verbose] Left 2 Success 3 Error 0 Total 5 Dowload 178 Extract 0 Pipeline 0
+2018-06-14 11:40:46.828 +08:00 [Information] Crawl: http://item.jd.com/1013286.html?_t=4 success, results: , effectedRow: .
+2018-06-14 11:40:46.828 +08:00 [Verbose] Left 1 Success 4 Error 0 Total 5 Dowload 147 Extract 0 Pipeline 0
+2018-06-14 11:40:46.937 +08:00 [Information] Crawl: http://item.jd.com/1013286.html?_t=5 success, results: , effectedRow: .
+2018-06-14 11:40:46.937 +08:00 [Verbose] Left 0 Success 5 Error 0 Total 5 Dowload 127 Extract 0 Pipeline 0
+2018-06-14 11:40:46.937 +08:00 [Verbose] Left 0 Success 5 Error 0 Total 5 Dowload 127 Extract 0 Pipeline 0
+2018-06-14 11:40:46.937 +08:00 [Information] Crawl complete, cost: 1.2090692 seconds.

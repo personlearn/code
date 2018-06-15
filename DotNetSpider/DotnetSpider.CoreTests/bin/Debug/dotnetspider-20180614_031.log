@@ -1,0 +1,10 @@
+2018-06-14 11:41:35.322 +08:00 [Information] Build internal component...
+2018-06-14 11:41:35.326 +08:00 [Information] Add start urls to scheduler, count 10000.
+2018-06-14 11:41:35.460 +08:00 [Verbose] Left 10000 Success 0 Error 0 Total 10000 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:41:35.548 +08:00 [Warning] Skip http://www.baidu.com/0 because extract 0 result.
+2018-06-14 11:41:36.639 +08:00 [Warning] Skip http://www.baidu.com/1 because extract 0 result.
+2018-06-14 11:41:37.728 +08:00 [Warning] Skip http://www.baidu.com/2 because extract 0 result.
+2018-06-14 11:41:38.815 +08:00 [Warning] Skip http://www.baidu.com/3 because extract 0 result.
+2018-06-14 11:41:39.906 +08:00 [Warning] Skip http://www.baidu.com/4 because extract 0 result.
+2018-06-14 11:41:40.322 +08:00 [Information] 01e606d8e5fc453c977a1fc3587abf4f
+2018-06-14 11:41:40.322 +08:00 [Warning] Crawler is running...

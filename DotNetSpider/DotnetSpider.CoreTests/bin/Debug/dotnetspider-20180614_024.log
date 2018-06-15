@@ -1,0 +1,17 @@
+2018-06-14 11:39:49.668 +08:00 [Information] Build internal component...
+2018-06-14 11:39:49.673 +08:00 [Information] Add start urls to scheduler, count 10000.
+2018-06-14 11:39:49.808 +08:00 [Verbose] Left 10000 Success 0 Error 0 Total 10000 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:39:49.889 +08:00 [Warning] Skip http://www.baidu.com/0 because extract 0 result.
+2018-06-14 11:39:50.971 +08:00 [Warning] Skip http://www.baidu.com/1 because extract 0 result.
+2018-06-14 11:39:52.052 +08:00 [Warning] Skip http://www.baidu.com/2 because extract 0 result.
+2018-06-14 11:39:53.134 +08:00 [Warning] Skip http://www.baidu.com/3 because extract 0 result.
+2018-06-14 11:39:54.215 +08:00 [Warning] Skip http://www.baidu.com/4 because extract 0 result.
+2018-06-14 11:39:54.668 +08:00 [Information] 75e61f1976264598b7823af01cb15875
+2018-06-14 11:39:54.668 +08:00 [Information] Exit...
+2018-06-14 11:39:55.215 +08:00 [Verbose] Left 9995 Success 5 Error 0 Total 10000 Dowload 78 Extract 0 Pipeline 0
+2018-06-14 11:39:55.215 +08:00 [Information] Crawl terminated, cost: 5.4073092 seconds.
+2018-06-14 11:40:29.266 +08:00 [Information] Build internal component...
+2018-06-14 11:40:29.473 +08:00 [Information] Add start urls to scheduler, count 0.
+2018-06-14 11:40:29.475 +08:00 [Verbose] Left 0 Success 0 Error 0 Total 0 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:40:30.659 +08:00 [Verbose] Left 0 Success 0 Error 0 Total 0 Dowload 0 Extract 0 Pipeline 0
+2018-06-14 11:40:30.662 +08:00 [Information] Crawl complete, cost: 1.1850678 seconds.
