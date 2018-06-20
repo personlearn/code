@@ -1,5 +1,6 @@
 ﻿using DotnetSpider.Core;
 using DotnetSpider.Core.Infrastructure.Database;
+using DotnetSpider.Core.Pipeline;
 using DotnetSpider.Extension.Infrastructure;
 using System;
 using System.Collections.Generic;

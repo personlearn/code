@@ -1,4 +1,5 @@
 ﻿using DotnetSpider.Core;
+using DotnetSpider.Core.Pipeline;
 using DotnetSpider.Extension.Model;
 using System;
 using System.Collections.Generic;

@@ -155,7 +155,6 @@
     <Compile Include="Model\ModelExtractor.cs" />
     <Compile Include="Model\Selector.cs" />
     <Compile Include="Model\TableInfo.cs" />
-    <Compile Include="Pipeline\BasePipeline.cs" />
     <Compile Include="Pipeline\ConsoleEntityPipeline.cs" />
     <Compile Include="Pipeline\DbModelPipeline.cs" />
     <Compile Include="Pipeline\DefaultMySqlPipeline.cs" />
