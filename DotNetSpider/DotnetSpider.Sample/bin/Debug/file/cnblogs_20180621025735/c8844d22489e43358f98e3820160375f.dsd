@@ -1,0 +1,62 @@
+﻿url:	http://www.cnblogs.com/ad.aspx
+title:	联系广告 - 关于博客园 About CNBlogs
+html:	<!DOCTYPE html>
+<html>
+<head>
+    <title>联系广告 - 关于博客园 About CNBlogs</title>
+    <meta charset="utf-8"/>
+	<meta name="keywords" content="博客园简介,开发者,程序员,代码改变世界,开发者社区,coding"/>
+    <link href="//common.cnblogs.com/css/reset.css" rel="Stylesheet" type="text/css" />
+	<link href="/css/about.css?id=20160816" rel="Stylesheet" type="text/css" />
+    <script src="//common.cnblogs.com/script/jquery.js"></script>
+    <script src="/script/about.js?id=20160816"></script>
+</head>
+<body>
+<div id="top_nav"><div id="top_nav_left">«<a href="//www.cnblogs.com" title="返回网站首页">首页</a><a href="//q.cnblogs.com">博问</a><a href="//news.cnblogs.com">新闻</a><a href="//ing.cnblogs.com/">闪存</a><a href="//kb.cnblogs.com/">知识库</a></div><div id="top_nav_right"></div></div>
+<div>
+<div id="main">
+    <div id="logo">
+        <a href="//www.cnblogs.com/"><img src="/images/logo.gif" alt="博客园 logo" style="border:0px"/></a>
+    </div>
+    <div id="aboutus">
+        <img src="/images/about/about_cnbogs.gif" alt="关于博客园"/>
+    </div>
+    <div id="side_left">
+    <ul id="nav_block">
+    <li><a href="/about/intro.aspx">网站简介</a></li>
+    <li><a href="/about/contactus.aspx">联系方式</a></li>
+    <li><a href="/about/ad.aspx" class="current">广告服务</a></li>
+    <li><a href="/about/job.aspx">人才服务</a></li>
+    </ul>
+    </div>
+    <div id="side_right">
+    
+<h1>联系广告</h1>
+<div id="content">
+    <ul id="history_block">
+        <li>
+            联系电话：<span id="phone_number"></span>
+        </li>
+        <li>
+            Email：<span id="email"></span>
+        </li>
+        <li>
+            <a href="//www.cnblogs.com/ad/ad_simple.htm" target="_blank">广告位示例</a>
+        </li>
+    </ul>
+    <script>
+        document.getElementById('phone_number').innerText = '021-' + '6059' + '0078（上海）' + ' ' + '0571-' + '8807' + '9867' + '（杭州）';
+        document.getElementById('email').innerHTML = '<a href="mailto:ad&#64;' + 'cnblogs.com">ad' + '&#64;cnblogs.com</a>';
+    </script>
+</div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="footer">
+    <a href="//www.cnblogs.com/AboutUS.aspx">关于博客园</a><a href="//www.cnblogs.com/ContactUs.aspx">联系我们</a><a href="/ad.aspx">广告服务</a><a href="/about/job.aspx">人才服务</a>&copy; 2004-2018<a href="//www.cnblogs.com">博客园</a>
+</div>
+</div>
+</body>
+</html>
+url:	http://www.cnblogs.com/ad.aspx

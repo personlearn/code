@@ -54,7 +54,15 @@
     <Compile Include="DDengEntitySpider.cs" />
     <Compile Include="DebugAfterDownloaderHandler.cs" />
     <Compile Include="DefaultMySqlPipelineSpider.cs" />
+    <Compile Include="docs\AfterDownloadCompleteHandler.cs" />
     <Compile Include="docs\AutoIncrementTargetUrlsExtractor.cs" />
+    <Compile Include="docs\CrawlerWholeSite.cs" />
+    <Compile Include="docs\CustmizeProcessorAndPipeline.cs" />
+    <Compile Include="docs\CustomizeFormatter.cs" />
+    <Compile Include="docs\EntityModel.cs" />
+    <Compile Include="docs\ModelSpider.cs" />
+    <Compile Include="docs\MultiEntityModel.cs" />
+    <Compile Include="docs\MultiProcessors.cs" />
     <Compile Include="JdCategorySpider.cs" />
     <Compile Include="JdShopDetailSpider.cs" />
     <Compile Include="JdShopDetailSpider2.cs" />
@@ -87,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="docs\Formatter.md" />
     <None Include="packages.config" />
     <None Include="tessdata\configs\bazzar" />
     <None Include="tessdata\eng.cube.bigrams" />

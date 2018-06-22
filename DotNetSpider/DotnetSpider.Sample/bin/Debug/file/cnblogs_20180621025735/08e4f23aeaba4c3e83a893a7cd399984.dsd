@@ -1,0 +1,53 @@
+﻿url:	http://www.cnblogs.com/about/job.aspx
+title:	人才服务 - 关于博客园 About CNBlogs
+html:	<!DOCTYPE html>
+<html>
+<head>
+    <title>人才服务 - 关于博客园 About CNBlogs</title>
+    <meta charset="utf-8"/>
+	<meta name="keywords" content="博客园简介,开发者,程序员,代码改变世界,开发者社区,coding"/>
+    <link href="//common.cnblogs.com/css/reset.css" rel="Stylesheet" type="text/css" />
+	<link href="/css/about.css?id=20160816" rel="Stylesheet" type="text/css" />
+    <script src="//common.cnblogs.com/script/jquery.js"></script>
+    <script src="/script/about.js?id=20160816"></script>
+</head>
+<body>
+<div id="top_nav"><div id="top_nav_left">«<a href="//www.cnblogs.com" title="返回网站首页">首页</a><a href="//q.cnblogs.com">博问</a><a href="//news.cnblogs.com">新闻</a><a href="//ing.cnblogs.com/">闪存</a><a href="//kb.cnblogs.com/">知识库</a></div><div id="top_nav_right"></div></div>
+<div>
+<div id="main">
+    <div id="logo">
+        <a href="//www.cnblogs.com/"><img src="/images/logo.gif" alt="博客园 logo" style="border:0px"/></a>
+    </div>
+    <div id="aboutus">
+        <img src="/images/about/about_cnbogs.gif" alt="关于博客园"/>
+    </div>
+    <div id="side_left">
+    <ul id="nav_block">
+    <li><a href="/about/intro.aspx">网站简介</a></li>
+    <li><a href="/about/contactus.aspx">联系方式</a></li>
+    <li><a href="/about/ad.aspx">广告服务</a></li>
+    <li><a href="/about/job.aspx" class="current">人才服务</a></li>
+    </ul>
+    </div>
+    <div id="side_right">
+    
+<h1>人才服务</h1>
+<div id="content">
+    <img src="//common.cnblogs.com/images/a4/job_300_250.jpg" class="office_img" alt="招聘服务" />
+    <p>
+        这里聚集着好多优秀IT人才！<br />
+        如果您苦于在简历中大海捞针，如果您求贤若渴，何不来这里试试。<br />
+        您可以在<a href="http://job.cnblogs.com/">招聘频道</a>免费发布招聘信息。<br />                    
+        如果您想有更好的效果，可以通过<b>推荐职位</b>或<b>招聘广告</b>更多展示您对人才的渴求。<br />
+    </p>               
+</div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="footer">
+    <a href="//www.cnblogs.com/AboutUS.aspx">关于博客园</a><a href="//www.cnblogs.com/ContactUs.aspx">联系我们</a><a href="/ad.aspx">广告服务</a><a href="/about/job.aspx">人才服务</a>&copy; 2004-2018<a href="//www.cnblogs.com">博客园</a>
+</div>
+</div>
+</body>
+</html>
+url:	http://www.cnblogs.com/about/job.aspx

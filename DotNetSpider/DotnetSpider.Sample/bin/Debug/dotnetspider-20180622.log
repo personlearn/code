@@ -1,0 +1,18 @@
+2018-06-22 17:17:26.920 +08:00 [Information] Build custom component...
+2018-06-22 17:23:46.150 +08:00 [Information] Build custom component...
+2018-06-22 17:23:46.343 +08:00 [Information] Build internal component...
+2018-06-22 17:23:46.522 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-22 17:23:46.526 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-22 17:23:47.364 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/1 success, results: 30, effectedRow: 30.
+2018-06-22 17:23:48.368 +08:00 [Verbose] Left 1 Success 1 Error 0 Total 2 Dowload 221 Extract 168 Pipeline 23
+2018-06-22 17:23:48.472 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/2 success, results: 30, effectedRow: 30.
+2018-06-22 17:23:49.476 +08:00 [Verbose] Left 1 Success 2 Error 0 Total 3 Dowload 134 Extract 91 Pipeline 32
+2018-06-22 17:23:49.572 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/3 success, results: 30, effectedRow: 30.
+2018-06-22 17:23:50.573 +08:00 [Verbose] Left 1 Success 3 Error 0 Total 4 Dowload 89 Extract 53 Pipeline 31
+2018-06-22 17:23:50.669 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/4 success, results: 30, effectedRow: 30.
+2018-06-22 17:23:51.670 +08:00 [Verbose] Left 1 Success 4 Error 0 Total 5 Dowload 65 Extract 37 Pipeline 30
+2018-06-22 17:23:56.750 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/5 success, results: 30, effectedRow: 30.
+2018-06-22 17:23:57.751 +08:00 [Verbose] Left 1 Success 5 Error 0 Total 6 Dowload 2554 Extract 24 Pipeline 26
+2018-06-22 17:23:57.877 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/6 success, results: 30, effectedRow: 30.
+2018-06-22 17:23:58.878 +08:00 [Verbose] Left 1 Success 6 Error 0 Total 7 Dowload 1313 Extract 26 Pipeline 24
+2018-06-22 17:23:58.966 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/7 success, results: 30, effectedRow: 30.

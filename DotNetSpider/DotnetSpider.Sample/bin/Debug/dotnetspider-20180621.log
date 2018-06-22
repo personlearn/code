@@ -1,0 +1,70 @@
+2018-06-21 10:33:39.084 +08:00 [Information] Build custom component...
+2018-06-21 10:36:34.465 +08:00 [Information] Build internal component...
+2018-06-21 10:36:34.512 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 10:36:45.460 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 10:40:58.812 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/1 success, results: 30, effectedRow: 30.
+2018-06-21 10:41:01.139 +08:00 [Verbose] Left 1 Success 1 Error 0 Total 2 Dowload 10688 Extract 1439 Pipeline 50
+2018-06-21 10:56:49.566 +08:00 [Information] Build custom component...
+2018-06-21 10:57:07.196 +08:00 [Information] Build internal component...
+2018-06-21 10:57:07.338 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 10:57:09.437 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 11:00:42.748 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/1 success, results: 30, effectedRow: 30.
+2018-06-21 11:00:45.442 +08:00 [Verbose] Left 1 Success 1 Error 0 Total 2 Dowload 51562 Extract 47729 Pipeline 15
+2018-06-21 11:02:46.027 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/2 success, results: 30, effectedRow: 30.
+2018-06-21 11:02:47.725 +08:00 [Verbose] Left 1 Success 2 Error 0 Total 3 Dowload 27137 Extract 82326 Pipeline 31
+2018-06-21 11:07:12.985 +08:00 [Information] Build custom component...
+2018-06-21 11:07:14.854 +08:00 [Information] Build internal component...
+2018-06-21 11:07:14.898 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 11:07:15.480 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 11:08:44.664 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/1 success, results: 30, effectedRow: 30.
+2018-06-21 11:08:50.693 +08:00 [Verbose] Left 1 Success 1 Error 0 Total 2 Dowload 3454 Extract 32624 Pipeline 5081
+2018-06-21 11:11:40.223 +08:00 [Information] Build custom component...
+2018-06-21 11:11:42.423 +08:00 [Information] Build internal component...
+2018-06-21 11:11:42.462 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 11:11:42.961 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 14:34:43.052 +08:00 [Information] Build custom component...
+2018-06-21 14:34:45.379 +08:00 [Information] Build internal component...
+2018-06-21 14:34:45.414 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 14:34:46.401 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 14:35:32.333 +08:00 [Information] Crawl: https://news.cnblogs.com/n/page/1 success, results: 30, effectedRow: 30.
+2018-06-21 14:35:34.964 +08:00 [Verbose] Left 1 Success 1 Error 0 Total 2 Dowload 902 Extract 21692 Pipeline 22
+2018-06-21 14:36:03.986 +08:00 [Information] Build custom component...
+2018-06-21 14:36:06.737 +08:00 [Information] Build internal component...
+2018-06-21 14:36:06.789 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 14:36:07.262 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 14:36:12.436 +08:00 [Information] Crawl: http://api.search.sina.com.cn/?c=news&t=&q=赵丽颖&pf=2136012948&ps=2130770082&page=0&stime=2011-06-20&etime=2018-06-22&sort=rel&highlight=1&num=10&ie=utf-8&callback=jQuery1720001955628746606708_1508996230766&_=1508996681484 success, results: 10, effectedRow: 10.
+2018-06-21 14:36:14.261 +08:00 [Verbose] Left 0 Success 1 Error 0 Total 1 Dowload 1023 Extract 1259 Pipeline 20
+2018-06-21 14:36:32.113 +08:00 [Verbose] Left 0 Success 1 Error 0 Total 1 Dowload 1023 Extract 1259 Pipeline 20
+2018-06-21 14:36:40.024 +08:00 [Information] Crawl complete, cost: 22.5522899 seconds.
+2018-06-21 14:36:40.068 +08:00 [Warning] 23e133558fc94ba3985f8bf8273d9b3e
+2018-06-21 14:36:50.205 +08:00 [Information] Build custom component...
+2018-06-21 14:36:52.411 +08:00 [Information] Build internal component...
+2018-06-21 14:36:52.434 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 14:36:52.950 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 14:36:57.693 +08:00 [Information] Crawl: http://api.search.sina.com.cn/?c=news&t=&q=赵丽颖&pf=2136012948&ps=2130770082&page=0&stime=2011-06-20&etime=2018-06-22&sort=rel&highlight=1&num=10&ie=utf-8&callback=jQuery1720001955628746606708_1508996230766&_=1508996681484 success, results: 10, effectedRow: 10.
+2018-06-21 14:36:59.274 +08:00 [Verbose] Left 0 Success 1 Error 0 Total 1 Dowload 916 Extract 1100 Pipeline 23
+2018-06-21 14:37:15.514 +08:00 [Verbose] Left 0 Success 1 Error 0 Total 1 Dowload 916 Extract 1100 Pipeline 23
+2018-06-21 14:37:15.529 +08:00 [Information] Crawl complete, cost: 21.8702509 seconds.
+2018-06-21 14:37:15.540 +08:00 [Warning] 75277f470b0e4ff698a06647036187e3
+2018-06-21 14:57:37.678 +08:00 [Information] Build internal component...
+2018-06-21 14:57:37.732 +08:00 [Information] Add start urls to scheduler, count 1.
+2018-06-21 14:57:38.453 +08:00 [Verbose] Left 1 Success 0 Error 0 Total 1 Dowload 0 Extract 0 Pipeline 0
+2018-06-21 14:57:50.922 +08:00 [Information] Crawl: https://www.cnblogs.com/sam-uncle/p/9208008.html success, results: 3, effectedRow: 3.
+2018-06-21 14:57:50.923 +08:00 [Information] Crawl: http://www.cnblogs.com/ContactUs.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:57:50.925 +08:00 [Information] Crawl: http://www.cnblogs.com/ success, results: 3, effectedRow: 3.
+2018-06-21 14:57:50.956 +08:00 [Information] Crawl: http://www.cnblogs.com/AboutUS.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:57:53.302 +08:00 [Verbose] Left 132 Success 4 Error 0 Total 136 Dowload 4458 Extract 12 Pipeline 2330
+2018-06-21 14:57:53.304 +08:00 [Verbose] Left 132 Success 4 Error 0 Total 136 Dowload 4458 Extract 12 Pipeline 2330
+2018-06-21 14:57:54.020 +08:00 [Verbose] Left 132 Success 4 Error 0 Total 136 Dowload 4458 Extract 12 Pipeline 2330
+2018-06-21 14:57:53.302 +08:00 [Verbose] Left 132 Success 4 Error 0 Total 136 Dowload 4458 Extract 12 Pipeline 2330
+2018-06-21 14:57:55.513 +08:00 [Information] Crawl: http://www.cnblogs.com/ad.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:57:55.876 +08:00 [Verbose] Left 128 Success 5 Error 0 Total 136 Dowload 2688 Extract 7 Pipeline 1166
+2018-06-21 14:57:58.290 +08:00 [Information] Crawl: http://www.cnblogs.com/about/intro.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:57:59.338 +08:00 [Verbose] Left 127 Success 6 Error 0 Total 136 Dowload 2301 Extract 3 Pipeline 584
+2018-06-21 14:57:59.907 +08:00 [Information] Crawl: http://www.cnblogs.com/about/job.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:58:00.451 +08:00 [Information] Crawl: http://www.cnblogs.com/about/ad.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:58:01.462 +08:00 [Information] Crawl: http://www.cnblogs.com/about/contactus.aspx success, results: 3, effectedRow: 3.
+2018-06-21 14:58:01.464 +08:00 [Verbose] Left 126 Success 9 Error 0 Total 136 Dowload 4786 Extract 72 Pipeline 79
+2018-06-21 15:05:30.021 +08:00 [Information] Build internal component...
+2018-06-21 15:05:30.076 +08:00 [Information] Add start urls to scheduler, count 4.
+2018-06-21 15:05:30.780 +08:00 [Verbose] Left 4 Success 0 Error 0 Total 4 Dowload 0 Extract 0 Pipeline 0

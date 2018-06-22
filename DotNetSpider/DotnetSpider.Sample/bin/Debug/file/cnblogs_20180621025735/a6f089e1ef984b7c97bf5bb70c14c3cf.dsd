@@ -1,0 +1,313 @@
+﻿url:	https://www.cnblogs.com/sam-uncle/p/9208008.html
+title:	RabbitMQ入门：发布/订阅（Publish/Subscribe） - JAVA开发老菜鸟 - 博客园
+html:	
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RabbitMQ入门：发布/订阅（Publish/Subscribe） - JAVA开发老菜鸟 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=-hy83QNg62d4qYibixJzxMJkbf1P9fTBlqv7SK5zVL01"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee.css?v=NnZbvdgFaQNhu3t8P4Wsaz98sDQkgRt7Qxq2rzF0ZRU1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.css?v=EhLLUe5NHsx18JODVZscd5ef3A8WbJHKTlTvuKQjsl01"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/sam-uncle/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/sam-uncle/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/sam-uncle/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">var currentBlogApp = 'sam-uncle', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="/bundles/blog-common.js?v=hrXhVUZRBrM1QWdCTm1D-5NdRKBmg-PqI2KBNh-fiD41" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/sam-uncle/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/sam-uncle/">JAVA开发老菜鸟</a></h1>
+<h2>不求一口吃个大胖子，只求每天进步一点点。</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+	<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/sam-uncle/">首页</a></li>
+	<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+	<li><a id="blog_nav_contact" accesskey="9" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/JAVA%E5%BC%80%E5%8F%91%E8%80%81%E8%8F%9C%E9%B8%9F">联系</a></li>
+	<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+	<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/sam-uncle/rss">订阅</a>
+	<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/sam-uncle/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a></li>
+</ul>
+
+
+			<div class="blogStats">
+				
+				<div id="blog_stats">
+<!--done-->
+随笔- 22&nbsp;
+文章- 0&nbsp;
+评论- 18&nbsp;
+</div>
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/sam-uncle/p/9208008.html">RabbitMQ入门：发布/订阅（Publish/Subscribe）</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p>在前面的两篇博客中</p>
+<ul>
+<li><a href="http://www.cnblogs.com/sam-uncle/p/9188426.html" target="_blank">RabbitMQ入门：Hello RabbitMQ 代码实例</a></li>
+<li><a href="http://www.cnblogs.com/sam-uncle/p/9202933.html" target="_blank">RabbitMQ入门：工作队列(Work Queue)</a></li>
+</ul>
+<p>遇到的实例都是<strong>一个消息只发送给一个消费者（工作者）</strong>，他们的消息模型分别为（P代表生产者，C代表消费者，红色代表队列）：</p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621102325395-768497266.png" alt="" /></p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621102345741-232809488.png" alt="" /></p>
+<p>这次我们来看下将<strong>一个消息发送给多个消费者（工作者）</strong>，这种模式一般被称为&ldquo;发布/订阅&rdquo;模式。其工作模型为（P代表生产者，X代表Exchange(路由器/交换机)，C代表消费者，红色代表队列）：</p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621102800484-62205405.png" alt="" /></p>
+<p>我们发现，工作模型中首次出现路由器，并且每个消费者有单独的队列。生产者生成消息后将其发送给路由器，然后路由器转送到队列，消费者各自到自己的队列里面获取消息进行消费。在实际的应用场景中，<strong>生产者一般不会直接将消息发送给队列，而是发送给路由器进行中转</strong>，Exchange必须清楚的知道怎么处理收到的消息：是将消息发送到一个特定队列还是多有队列，或者直接废弃消息。这种才符合<strong>RabbitMQ消息模型的核心思想</strong>。</p>
+<p>接下来我们详细展开今天的话题：</p>
+<p><span style="font-size: 18px;"><strong>一、Exchange</strong></span></p>
+<p>Exchange在我们的工作模型中首次出现，因此需要详细介绍下。</p>
+<p>Exchange分为4种类型：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">Direct：完全根据key进行投递的，例如，绑定时设置了routing key为&rdquo;abc&rdquo;，那么客户端提交的消息，只有设置了key为&rdquo;abc&rdquo;的才会投递到队列。
+Topic：对key进行模式匹配后进行投递，符号&rdquo;#&rdquo;匹配一个或多个词，符号&rdquo;</span>*&rdquo;匹配正好一个词。例如&rdquo;abc.#&rdquo;匹配&rdquo;abc.def.ghi&rdquo;，&rdquo;abc.*<span style="color: #000000;">&rdquo;只匹配&rdquo;abc.def&rdquo;。
+Fanout：不需要key，它采取广播模式，一个消息进来时，投递到与该交换机绑定的所有队列。
+Headers:我们可以不考虑它。</span></pre>
+</div>
+<p>今天我们的实例采用fanout类型的exchange。</p>
+<p>尽管首次出现，但是其实我们前面的案例中也有用到exchange，只是我们没有给他名字，用的是RabbitMQ默认的，比如下面这段代码，我们将路由器名这个参数传入了&ldquo;&rdquo;，如果我们需要自己声明exchange的话，这个就不能传入&ldquo;&rdquo;了，而是传入自己定义好的值。</p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621104513927-1191385928.png" alt="" /></p>
+<p><span style="font-size: 18px;"><strong>二、临时队列</strong></span></p>
+<p>前面两篇博客中，我们都在使用队列的时候给出了定义好的名字，这在生产者和消费者共用相同队列的时候很有必要，但是我们有了exchange，生产者不需要知道有哪些队列，因此队列名字可以不用指定了，而是通过RabbitMQ 接口自己去生成临时队列，队列名字也由RabbitMQ自动生成。通过</p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621105641974-2002126277.png" alt="" /></p>
+<p>可以声明一个非持久的、通道独占的、自动删除的队列，getQueue()方法可以获取随机队列名字。这个名字用来在队列和exchange之间建立binding关系的时候使用：</p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621105927566-498001291.png" alt="" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18px;"><strong>三、代码实现</strong></span></p>
+<p>基于上面exchange和临时队列的知识铺垫，可以展开今天的代码实现了。</p>
+<ol>
+<li>&nbsp;生产者
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> Product {
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">exchange名字</span>
+    <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> String EXCHANGE_NAME = "exchange"<span style="color: #000000;">;
+
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> main(String[] args) {
+        ConnectionFactory factory </span>= <span style="color: #0000ff;">new</span><span style="color: #000000;"> ConnectionFactory();
+        factory.setHost(</span>"localhost"<span style="color: #000000;">);
+        Connection connection </span>= <span style="color: #0000ff;">null</span><span style="color: #000000;">;
+        Channel channel </span>= <span style="color: #0000ff;">null</span><span style="color: #000000;">;
+        </span><span style="color: #0000ff;">try</span><span style="color: #000000;"> {
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 1.创建连接和通道</span>
+            connection =<span style="color: #000000;"> factory.newConnection();
+            channel </span>=<span style="color: #000000;"> connection.createChannel();
+
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 2.为通道声明exchange和exchange的类型</span>
+<span style="color: #000000;">            channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
+            
+            String msg </span>= " hello rabbitmq, this is publish/subscribe mode"<span style="color: #000000;">;
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 3.发送消息到指定的exchange,队列指定为空,由exchange根据情况判断需要发送到哪些队列</span>
+            channel.basicPublish(EXCHANGE_NAME, "", <span style="color: #0000ff;">null</span><span style="color: #000000;">, msg.getBytes());
+            System.out.println(</span>"product send a msg: " +<span style="color: #000000;"> msg);
+        } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (IOException e) {
+            e.printStackTrace();
+        } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (TimeoutException e) {
+            e.printStackTrace();
+        } </span><span style="color: #0000ff;">finally</span><span style="color: #000000;"> {
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 4.关闭连接</span>
+            <span style="color: #0000ff;">if</span> (channel != <span style="color: #0000ff;">null</span><span style="color: #000000;">) {
+                </span><span style="color: #0000ff;">try</span><span style="color: #000000;"> {
+                    channel.close();
+                } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (IOException e) {
+                    e.printStackTrace();
+                } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (TimeoutException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            </span><span style="color: #0000ff;">if</span> (connection != <span style="color: #0000ff;">null</span><span style="color: #000000;">) {
+                </span><span style="color: #0000ff;">try</span><span style="color: #000000;"> {
+                    connection.close();
+                } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+</li>
+<li>消费者1
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> Consumer1 {
+
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> main(String[] args) {
+        ConnectionFactory factory </span>= <span style="color: #0000ff;">new</span><span style="color: #000000;"> ConnectionFactory();
+        factory.setHost(</span>"localhost"<span style="color: #000000;">);
+        Connection connection </span>= <span style="color: #0000ff;">null</span><span style="color: #000000;">;
+        Channel channel </span>= <span style="color: #0000ff;">null</span><span style="color: #000000;">;
+        </span><span style="color: #0000ff;">try</span><span style="color: #000000;"> {
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 1.创建连接和通道</span>
+            connection =<span style="color: #000000;"> factory.newConnection();
+            channel </span>=<span style="color: #000000;"> connection.createChannel();
+
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 2.为通道声明exchange以及exchange类型</span>
+<span style="color: #000000;">            channel.exchangeDeclare(Product.EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
+
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 3.创建随机名字的队列</span>
+            String queueName =<span style="color: #000000;"> channel.queueDeclare().getQueue();
+
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 4.建立exchange和队列的绑定关系</span>
+            channel.queueBind(queueName, Product.EXCHANGE_NAME, ""<span style="color: #000000;">);
+            System.out.println(</span>" **** Consumer1 keep alive ,waiting for messages, and then deal them"<span style="color: #000000;">);
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 5.通过回调生成消费者并进行监听</span>
+            Consumer consumer = <span style="color: #0000ff;">new</span><span style="color: #000000;"> DefaultConsumer(channel) {
+                @Override
+                </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> handleDelivery(String consumerTag, Envelope envelope,
+                        com.rabbitmq.client.AMQP.BasicProperties properties, </span><span style="color: #0000ff;">byte</span>[] body) <span style="color: #0000ff;">throws</span><span style="color: #000000;"> IOException {
+
+                    </span><span style="color: #008000;">//</span><span style="color: #008000;"> 获取消息内容然后处理</span>
+                    String msg = <span style="color: #0000ff;">new</span> String(body, "UTF-8"<span style="color: #000000;">);
+                    System.out.println(</span>"*********** Consumer1" + " get message :[" + msg + "]"<span style="color: #000000;">);
+                }
+            };
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> 6.消费消息</span>
+            channel.basicConsume(queueName, <span style="color: #0000ff;">true</span><span style="color: #000000;">, consumer);
+        } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (IOException e) {
+            e.printStackTrace();
+        } </span><span style="color: #0000ff;">catch</span><span style="color: #000000;"> (TimeoutException e) {
+            e.printStackTrace();
+        }
+    }
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+</li>
+<li>消费者2，核心代码同消费者1一样，只是在日志打印上将"Consumer1"改为"Consumer2"而已。这里不再列出具体代码。</li>
+<li>先运行消费者1和2，然后运行生产者，观察控制台log打印情况：
+<div class="cnblogs_code">
+<pre><span style="color: #000000;"><strong>生产者：</strong>
+product send a msg:  hello rabbitmq, </span><span style="color: #0000ff;">this</span> is publish/<span style="color: #000000;">subscribe mode
+
+<strong>消费者1</strong>：
+ </span>**** Consumer1 keep alive ,waiting <span style="color: #0000ff;">for</span><span style="color: #000000;"> messages, and then deal them
+</span>*********** Consumer1 get message :[ hello rabbitmq, <span style="color: #0000ff;">this</span> is publish/<span style="color: #000000;">subscribe mode]
+
+<strong>消费者2：
+ </strong></span>**** Consumer2 keep alive ,waiting <span style="color: #0000ff;">for</span><span style="color: #000000;"> messages, and then deal them
+</span>*********** Consumer2 get message :[ hello rabbitmq, <span style="color: #0000ff;">this</span> is publish/subscribe mode]</pre>
+</div>
+<p>可以看到，当生产者发出消息后，两个消费者最终都收到了消息。</p>
+</li>
+<li>我们去查看RabbitMQ管理页面：<img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621110936374-2138037317.png" alt="" />
+<p>在Exchanges 标签页里面多了一个名为&ldquo;exchange&rdquo;的路由器，他的类型是fanout。点exchange 的link进入详细页面：<img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621111212953-1142976835.png" alt="" /></p>
+<p>发现在binding项目中有了两条绑定关系，队列的名字也可以看到。将页面切换到Queues标签页：<img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621111504687-65861729.png" alt="" /></p>
+<p>出现了两个新的队列，队列名字和绑定关系中的一样，并且队列都是自动删除的、通道独占的。</p>
+</li>
+<li>然后将消费者1和消费者2都停掉，重新查看管理页面，我们发现exchange还在，binding关系不存在了，临时队列也自动删除了<img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621111913946-1209466755.png" alt="" />
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621111935430-730193399.png" alt="" /></p>
+<p><img src="https://images2018.cnblogs.com/blog/1345071/201806/1345071-20180621111946589-624780148.png" alt="" /></p>
+<p>&nbsp;</p>
+</li>
+</ol></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2018-06-21 11:43</span> <a href='http://www.cnblogs.com/sam-uncle/'>JAVA开发老菜鸟</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=9208008" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(9208008);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=418129,cb_entryId=9208008,cb_blogApp=currentBlogApp,cb_blogUserGuid='43858c52-6a1c-4235-9a6e-08d581a6bd57',cb_entryCreatedDate='2018/6/21 11:43:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='cnblogs_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2018 JAVA开发老菜鸟
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+</body>
+</html>
+
+url:	https://www.cnblogs.com/sam-uncle/p/9208008.html
